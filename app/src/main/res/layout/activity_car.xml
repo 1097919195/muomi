@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:background="#0080ff"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#0090ff"
+        android:text="绿苑小吃第二窗口"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#fff"
+        android:layout_below="@+id/address">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/tipone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  尽快制作完成【预计10分钟内】"
+            android:textSize="22sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/tiptwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  免密支付开启中"
+            android:layout_below="@id/tipone"
+            android:textSize="22sp"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" 
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout2"
+        >
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-阿龙美食坊-"
+            android:layout_above="@+id/menu_one"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <ListView
+            android:id="@+id/needmenu_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/good"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_marginBottom="50dp">
+        <TextView
+            android:id="@+id/tipthree"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="#f1f1f1"
+            android:layout_marginTop="20dp"
+            android:text="温馨提示"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tipfour"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipthree"
+            android:text="由于学生较多，套餐堆积量的问题"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipfour"
+            android:text="(请在预计时间左右及时取走)"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff2f373e"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/zprice"
+            android:layout_marginLeft="10dp"
+            android:text="总计￥0"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/spend"
+            android:layout_alignParentRight="true"
+            android:text="免密支付"
+            android:background="@drawable/gogo"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</RelativeLayout>
